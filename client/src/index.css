@@ -21,6 +21,9 @@
   .text__para {
     @apply text-[18px] leading-[30px] font-[400] text-textColor mt-[18px];
   }
+  .header {
+    @apply bg-[url('./assets/images/header-bg.png')] bg-cover bg-no-repeat bg-center w-full h-[100px] leading-[100px];
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container {
@@ -38,5 +41,8 @@
   }
   .text__para {
     @apply text-[14px] leading-7 mt-3;
+  }
+  .menu {
+    @apply hidden;
   }
 }
