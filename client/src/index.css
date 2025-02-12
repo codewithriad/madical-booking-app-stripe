@@ -24,6 +24,9 @@
   .header {
     @apply bg-[url('./assets/images/header-bg.png')] bg-cover bg-no-repeat bg-center w-full h-[100px] leading-[100px];
   }
+  .hero__section {
+    @apply bg-[url('./assets/images/hero-bg.png')] bg-cover bg-no-repeat bg-center;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container {

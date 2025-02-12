@@ -34,7 +34,7 @@ const Header = () => {
     },
     {
       path: "/doctors",
-      label: "Doctors",
+      label: "Find a Doctors",
     },
     {
       path: "services",
@@ -105,7 +105,7 @@ const Header = () => {
                   <img
                     src={figureImg}
                     alt="user"
-                    className="w-full rounded-full"
+                    className="w-full rounded-full hidden"
                   />
                 </figure>
               </Link>
