@@ -2,12 +2,31 @@ import { CgMenuRight } from "react-icons/cg";
 import { RiCloseLine } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import figureImg from "../../assets/images/avatar-icon.png";
 import logo from "../../assets/images/logo.png";
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
+  const headerRef = useRef(null);
+  
+
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      headerRef.current.classList.add("sticky__header");
+    } else {
+      headerRef.current.classList.remove("sticky__header");
+    }
+  }
+
+  useEffect(() => {
+    handleScroll()
+  
+    return () => window.removeEventListener("scroll", handleScroll)
+  })
+  
+
+
   const navLinks = [
     {
       path: "/",
@@ -30,28 +49,26 @@ const Header = () => {
   const openMenu = () => {
     return (
       <>
-        <ul>
-          {navLinks.map((link, index) => (
-            <li key={index}>
-              <NavLink
-                to={link.path}
-                className={(navClass) =>
-                  navClass.isActive
-                    ? "text-primaryColor text-[16px] leading-7 font-semibold"
-                    : "text-textColor text-[16px] leading-7 font-medium"
-                }
-              >
-                {link.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
+        {navLinks.map((link, index) => (
+          <li key={index}>
+            <NavLink
+              to={link.path}
+              className={(navClass) =>
+                navClass.isActive
+                  ? "text-primaryColor text-[16px] leading-7 font-semibold"
+                  : "text-textColor text-[16px] leading-7 font-medium"
+              }
+            >
+              {link.label}
+            </NavLink>
+          </li>
+        ))}
       </>
     );
   };
   return (
     <>
-      <header className="header flex items-center">
+      <header className="header flex items-center" ref={headerRef}>
         <div className="container">
           <div className="flex items-center justify-between">
             {/* {============== logo ==============} */}
@@ -111,8 +128,8 @@ const Header = () => {
                   )}
 
                   {!menu && (
-                    <div className="flex justify-center items-center flex-col absolute top-[20px] right-[4rem]">
-                      {openMenu()}
+                    <div className="flex justify-center items-center flex-col absolute top-[40px] right-[4rem]">
+                      <ul>{openMenu()}</ul>
                     </div>
                   )}
                 </div>
