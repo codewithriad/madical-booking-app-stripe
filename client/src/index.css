@@ -12,7 +12,7 @@
   .container {
     @apply max-w-full w-[1440px] px-5 mx-auto;
   }
-  .btn {
+  .button {
     @apply bg-primaryColor py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px];
   }
   .heading {
@@ -43,9 +43,6 @@
     @apply text-[26px] leading-[36px];
   }
   .text__para {
-    @apply text-[14px] leading-7 mt-3;
-  }
-  .menu {
-    @apply hidden;
+    @apply text-[16px] leading-7 mt-3;
   }
 }
