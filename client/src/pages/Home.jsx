@@ -8,6 +8,7 @@ import icon03 from "../assets/images/icon03.png";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import About from "../components/About/About";
+import ServiceList from "../components/Services/ServiceList";
 const Home = () => {
   return (
     <>
@@ -155,6 +156,10 @@ const Home = () => {
       {/* About section */}
 
       <About/>
+
+      {/* Services section */}
+
+      <ServiceList />
     </>
   );
 };
