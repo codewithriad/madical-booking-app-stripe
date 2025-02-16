@@ -27,7 +27,7 @@ const Home = () => {
                   quia placeat esse autem harum eius labore quaerat perferendis.
                   Fugit, suscipit impedit.
                 </p>
-                <button className="btn">Request an Appointment</button>
+                <button className="btn mt-[30px] hover:text-white hover:bg-primaryColor">Request an Appointment</button>
               </div>
               {/* ============ hero counter line ============ */}
 
@@ -70,7 +70,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* services section */}
+
+
+      {/* doctor services section */}
 
       <section>
         <div className="container">
