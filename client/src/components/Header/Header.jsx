@@ -22,6 +22,7 @@ const Header = () => {
       path: "/contact",
       label: "Contact",
     },
+    
   ];
 
   return (
@@ -53,7 +54,7 @@ const Header = () => {
                 {user && <img src={avater} className="w-10" alt="login-user" />}
               </figure>
               <button className="btn bg-primaryColor text-white px-6  ">
-                <Link to="/contact">Contact</Link>
+                <Link to="/login">Login</Link>
               </button>
               <div className="flex md:hidden">
                 <div className="dropdown relative flex">
