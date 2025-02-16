@@ -7,6 +7,7 @@ import icon03 from "../assets/images/icon03.png";
 
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import About from "../components/About/About";
 const Home = () => {
   return (
     <>
@@ -27,7 +28,9 @@ const Home = () => {
                   quia placeat esse autem harum eius labore quaerat perferendis.
                   Fugit, suscipit impedit.
                 </p>
-                <button className="btn mt-[30px] hover:text-white hover:bg-primaryColor">Request an Appointment</button>
+                <button className="btn mt-[30px] hover:text-white hover:bg-primaryColor">
+                  Request an Appointment
+                </button>
               </div>
               {/* ============ hero counter line ============ */}
 
@@ -71,7 +74,6 @@ const Home = () => {
         </div>
       </section>
 
-
       {/* doctor services section */}
 
       <section>
@@ -86,13 +88,12 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-[30px] mt-[30px] lg:mt-[55px]">
-            
             <div className="mt-[30px]">
-            <div className="py-[30px] px-5">
-              <div className="flex items-center justify-center">
-                <img src={icon01} alt="" />
+              <div className="py-[30px] px-5">
+                <div className="flex items-center justify-center">
+                  <img src={icon01} alt="" />
+                </div>
               </div>
-            </div>
               <h2 className="text-[26px] leading-9 text-headingColor font-bold text-center">
                 Find a Doctor
               </h2>
@@ -148,11 +149,12 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          
-
-         
         </div>
       </section>
+
+      {/* About section */}
+
+      <About/>
     </>
   );
 };
