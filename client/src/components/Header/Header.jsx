@@ -4,6 +4,7 @@ import avater from '../../assets/images/avatar-icon.png';
 import logo from "../../assets/images/logo.png";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState(false);
   const navLinks = [
     {
       path: "/",
@@ -35,7 +36,7 @@ const Header = () => {
               </Link>
             </div>
             {/* ======== navigation on center ======== */}
-            <div className="navbar-center flex md:hidden">
+            <div className="navbar-center md:flex hidden">
               <ul className="menu menu-horizontal px-1">
                 {navLinks.map((items, index) => {
                   return (
@@ -49,16 +50,16 @@ const Header = () => {
             {/* ============= Hamburger menu =========== */}
             <div className="navbar-end flex justify-end gap-8">
               <figure>
-                <img src={avater} className="w-10" alt="login-user" />
+                {user && <img src={avater} className="w-10" alt="login-user" />}
               </figure>
               <button className="btn bg-primaryColor text-white px-6  ">
                 <Link to="/contact">Contact</Link>
               </button>
-              <div className="hidden md:flex">
-                <div className="dropdown relative">
+              <div className="flex md:hidden">
+                <div className="dropdown relative flex">
                   <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="md:flex w-8 h-8 focus:outline-none z-20 relative"
+                    className="flex w-8 h-8 focus:outline-none z-20 relative"
                   >
                     {isOpen ? (
                       <svg

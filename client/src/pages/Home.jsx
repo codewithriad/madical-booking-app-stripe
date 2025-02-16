@@ -24,7 +24,7 @@ const Home = () => {
               </div>
               {/* ============ hero counter line ============ */}
 
-              <div className="mt-[30px] lg:mt-[70px] flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[30px]">
+              <div className="mt-[30px] lg:mt-[70px] flex flex-row lg:items-center gap-5 lg:gap-[30px]">
                 <div>
                   <h2 className="text-[36px] leading-[56px] lg:text[44px] lg:leading-[54px] font-bold text-headingColor">
                     30+
