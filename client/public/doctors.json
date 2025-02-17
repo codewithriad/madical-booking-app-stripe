@@ -1,0 +1,34 @@
+
+
+  {
+    "id": "01",
+    "name": "Dr. Alfaz Ahmed",
+    "specialty": "Surgeon",
+    "avgRating": 4.8,
+    "totalRating": 272,
+    "photo": "https://i.ibb.co.com/C5Y5Sj0F/doctor-img01.png",
+    "totalPatients": 1500,
+    "hospital": "Mount Adora Hospital, Sylhet."
+  }
+
+  {
+    "id": "02",
+    "name": "Dr. Saleh Mahmud",
+    "specialty": "Neurologist",
+    "avgRating": 4.8,
+    "totalRating": 272,
+    "photo": "https://i.ibb.co.com/wFMgqgBb/doctor-img02.png",
+    "totalPatients": 1500,
+    "hospital": "Mount Adora Hospital, Barisal.",
+  }
+  {
+    "id": "03",
+    "name": "Dr. Farid Uddin",
+    "specialty": "Dermatologist",
+    "avgRating": 4.8,
+    "totalRating": 272,
+    "photo": "https://i.ibb.co.com/ycyGG371/doctor-img03.png",
+    "totalPatients": 1500,
+    "hospital": "Mount Adora Hospital, Dhaka.",
+  },
+

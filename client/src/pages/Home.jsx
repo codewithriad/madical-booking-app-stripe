@@ -8,6 +8,7 @@ import icon03 from "../assets/images/icon03.png";
 import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import About from "../components/About/About";
+import DoctorsList from "../components/Doctors/DoctorsList";
 import Features from "../components/Feature/Features";
 import ServiceList from "../components/Services/ServiceList";
 const Home = () => {
@@ -165,6 +166,10 @@ const Home = () => {
       {/* Feature Section */} 
 
       <Features/>
+
+      {/* Our Great doctors */}
+
+      <DoctorsList/>
     </>
   );
 };
