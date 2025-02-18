@@ -12,6 +12,7 @@ import DoctorsList from "../components/Doctors/DoctorsList";
 import Faq from "../components/Faq/Faq";
 import Features from "../components/Feature/Features";
 import ServiceList from "../components/Services/ServiceList";
+import Testimonial from "../components/Testimonial/Testimonial";
 const Home = () => {
   return (
     <>
@@ -175,6 +176,10 @@ const Home = () => {
       {/* Faq section */}
 
       <Faq/>
+
+      {/* Testimonial section */}
+
+      <Testimonial/>
     </>
   );
 };

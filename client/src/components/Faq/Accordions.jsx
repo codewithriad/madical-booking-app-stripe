@@ -1,6 +1,6 @@
 import {
-    MdKeyboardDoubleArrowDown,
-    MdKeyboardDoubleArrowUp,
+  MdKeyboardDoubleArrowDown,
+  MdKeyboardDoubleArrowUp,
 } from "react-icons/md";
 
 import { useEffect, useState } from "react";
@@ -36,8 +36,8 @@ const Accordions = () => {
             </span>
           </div>
           {openIndex === index && (
-            <div className="p-3 text-textColor">
-              <p className="text-textColor text-base">{faq.content}</p>
+            <div className="p-3">
+              <p className="text-textColor">{faq.content}</p>
             </div>
           )}
         </div>

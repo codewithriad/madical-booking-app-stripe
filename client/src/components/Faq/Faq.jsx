@@ -14,7 +14,7 @@ const Faq = () => {
             </figure>
 
             {/* All Faq importing */}
-            <div className="flex justify-center flex-col mt-8 lg:mt-0">
+            <div className="flex flex-col mt-8 lg:mt-0">
               <h2 className="heading mb-8">
                 Most question by our beloved patients
               </h2>
