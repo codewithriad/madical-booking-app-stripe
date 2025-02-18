@@ -14,7 +14,7 @@ const DoctorsCard = () => {
     <>
       {data.map((doctor, index) => (
         <div
-          className="card bg-base-100 w-[25rem] sm:w-[22rem] shadow-xl mb-6"
+          className="card bg-base-100 w-[25rem] sm:w-[20rem] shadow-xl mb-6"
           key={index}
         >
           <figure>
