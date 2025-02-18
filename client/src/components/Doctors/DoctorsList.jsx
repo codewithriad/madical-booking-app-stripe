@@ -8,9 +8,9 @@ const DoctorsList = () => {
           {/* doctor header */}
 
           <div className="mt-8 mb-12">
-            <h2 className="heading text-center">Our Medical Services</h2>
+            <h2 className="heading text-center">Our Great Doctors</h2>
             <p className="text__para text-center w-3/4 mx-auto">
-              We have a team of top doctors who specialize in various areas of medicine. We have concern for every patent.</p>
+              World class care for everyone. Our health system offers exclusive medical system with expert health care.</p>
           </div>
 
           {/* doctor cards imported */}
