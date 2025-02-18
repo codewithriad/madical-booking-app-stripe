@@ -9,6 +9,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import About from "../components/About/About";
 import DoctorsList from "../components/Doctors/DoctorsList";
+import Faq from "../components/Faq/Faq";
 import Features from "../components/Feature/Features";
 import ServiceList from "../components/Services/ServiceList";
 const Home = () => {
@@ -170,6 +171,10 @@ const Home = () => {
       {/* Our Great doctors */}
 
       <DoctorsList/>
+
+      {/* Faq section */}
+
+      <Faq/>
     </>
   );
 };
