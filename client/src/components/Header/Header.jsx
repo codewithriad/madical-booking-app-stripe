@@ -2,10 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import avater from '../../assets/images/avatar-icon.png';
 import logo from "../../assets/images/logo.png";
-const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [user, setUser] = useState(false);
-  const navLinks = [
+
+ const navLinks = [
     {
       path: "/",
       label: "Home",
@@ -24,6 +22,10 @@ const Header = () => {
     },
     
   ];
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [user, setUser] = useState(false);
+ 
 
   return (
     <>
@@ -38,7 +40,7 @@ const Header = () => {
             </div>
             {/* ======== navigation on center ======== */}
             <div className="navbar-center md:flex hidden">
-              <ul className="menu menu-horizontal px-1">
+              <ul className="menu menu-horizontal px-2">
                 {navLinks.map((items, index) => {
                   return (
                     <li key={index}>
