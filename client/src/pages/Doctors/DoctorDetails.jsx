@@ -1,11 +1,13 @@
-
+/* eslint-disable react/prop-types */
 
 const DoctorDetails = () => {
-  return (
-    <>
-      <h2>details</h2>
-    </>
-  )
-}
 
-export default DoctorDetails
+
+  return (
+   <>
+    <h2>Doctor Details page</h2>
+   </>
+  );
+};
+
+export default DoctorDetails;

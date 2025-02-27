@@ -34,7 +34,7 @@ const DoctorsCard = () => {
                     backgroundColor: doctor.bgColor,
                   }}
                 >
-                  {doctor.specialty}
+                  {doctor.specialization}
                 </p>
               </div>
               <div className="flex justify-between items-center gap-2">
@@ -44,22 +44,25 @@ const DoctorsCard = () => {
               </div>
             </div>
 
-            <div className="flex items-center py-4">
-              <p className="text-base leading-7 text-textColor font-normal mt-4 text-center">
-                {doctor.hospital}
-              </p>
+            <div className="flex items-center">
+              <div>
+                <p className="font-medium text-base leading-7">
+                  <span style={{color: doctor.bgColor}}>{doctor.totalPatients} </span> of Patients
+                </p>
+
+                <p className="text-base leading-7 text-textColor font-normal">
+                  {doctor.hospital}
+                </p>
+              </div>
+
               <Link
-                to="/doctors"
+                to={`/doctors/${doctor.id}`}
                 className="w-[44px] h-[44px] rounded-full border border-solid border-[#181A1E] mt-[30px] mx-auto flex items-center justify-center group hover:bg-primaryColor hover:text-white hover:border-none"
               >
                 <BsArrowRight />
               </Link>
             </div>
-            
           </div>
-          
-
-           
         </div>
       ))}
     </>
@@ -68,13 +71,13 @@ const DoctorsCard = () => {
 
 export default DoctorsCard;
 
-//  {
-//     id: "01",
-//     name: "Dr. Alfaz Ahmed",
-//     specialty: "Surgeon",
-//     avgRating: 4.8,
-//     totalRating: 272,
-//     photo: doctorImg01,
-//     totalPatients: 1500,
-//     hospital: "Mount Adora Hospital, Sylhet.",
-//   }
+// id: "03",
+// batchColor: "#ff0",
+// bgColor: "#1fe7d7",
+// name: "Dr. Farid Uddin",
+// specialization: "Dermatologist",
+// avgRating: 4.9,
+// totalRating: 483,
+// photo: doctorImg03,
+// totalPatients: 4000,
+// hospital: "Medical Collage, Khulna",
